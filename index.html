@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- Importação das bibliotecas/frameworks utilizados -->
+    <script
+      type="text/javascript"
+      src="https://aframe.io/releases/1.4.1/aframe.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
+    ></script>
+
+    <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+  </head>
+
+  <body style="margin: 0px; overflow: hidden">
+    
+    <!-- Todo o funcionamento do A-Frama precisa estar dentro de uma tag <a-scene> -->
+    <a-scene
+      embedded
+      arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960;"
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true; colorManagement: true"
+      gesture-detector
+    >
+      <!-- Usado para carregar logo que iniciar o site todas as imagens, criando um asset para cada uma -->
+      <!-- Roupa A -->
+      <a-assets>
+        <img
+          id="roupa-a"
+          src="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/roupa_a.png?v=1681849643382"
+        />
+      </a-assets>
+
+      <!-- Roupa B -->
+      <a-assets>
+        <img
+          id="roupa-b"
+          src="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/roupa_b.png?v=1681849645988"
+        />
+      </a-assets>
+
+      <!-- Roupa C -->
+      <a-assets>
+        <img
+          id="roupa-c"
+          src="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/roupa_c.png?v=1681849648603"
+        />
+      </a-assets>
+
+      <!-- Roupa D -->
+      <a-assets>
+        <img
+          id="roupa-d"
+          src="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/roupa_d.png?v=1681849650389"
+        />
+      </a-assets>
+
+      <!-- Roupa E -->
+      <a-assets>
+        <img
+          id="roupa-e"
+          src="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/roupa_e.png?v=1681849655048"
+        />
+      </a-assets>
+
+      <!-- Roupa F -->
+      <a-assets>
+        <img
+          id="roupa-f"
+          src="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/roupa_f.png?v=1681849657763"
+        />
+      </a-assets>
+
+      <!-- Marcador A -->
+      <a-marker
+        type="pattern"
+        url="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/marcador_a.patt?v=1681742691942"
+      >
+        <!-- 1 x 1.1953125 -->
+        <a-image
+          gesture-handler
+          rotation="-90 0 0"
+          scale="5 6 1"
+          src="#roupa-a"
+        ></a-image>
+      </a-marker>
+
+      <!-- Marcador B -->
+      <a-marker
+        type="pattern"
+        url="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/marcador_b.patt?v=1681748607841"
+      >
+        <!-- 1 x 1.1953125 -->
+        <a-image
+          gesture-handler
+          rotation="-90 0 0"
+          scale="5 6 1"
+          src="#roupa-b"
+        ></a-image>
+      </a-marker>
+
+      <!-- Marcador C -->
+      <a-marker
+        type="pattern"
+        url="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/marcador_c.patt?v=1681748606406"
+      >
+        <!-- 1 x 1.1953125 -->
+        <a-image
+          gesture-handler
+          rotation="-90 0 0"
+          scale="5 6 1"
+          src="#roupa-c"
+        ></a-image>
+      </a-marker>
+
+      <!-- Marcador D -->
+      <a-marker
+        type="pattern"
+        url="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/marcador_d.patt?v=1681748606836"
+      >
+        <!-- 1 x 1.1953125 -->
+        <a-image
+          gesture-handler
+          rotation="-90 0 0"
+          scale="5 6 1"
+          src="#roupa-d"
+        ></a-image>
+      </a-marker>
+
+      <!-- Marcador E -->
+      <a-marker
+        type="pattern"
+        url="https://cdn.glitch.global/dfa7abda-f045-48cd-8e84-38dc0029ca2d/marcador_e.patt?v=1681748607198"
+      >
+        <!-- 1 x 1.1953125 -->
+        <a-image
+          gesture-handler
+          rotation="-90 0 0"
+          scale="5 6 1"
+          src="#roupa-e"
+        ></a-image>
+      </a-marker>
+
+      <!-- add a simple camera -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
