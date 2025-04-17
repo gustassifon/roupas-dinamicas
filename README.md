@@ -6,4 +6,4 @@ Construído com [A-Frame](https://aframe.io), [AR.js](https://ar-js-org.github.i
 
 Cria um vestuário virtual baseado em marcadores adicionando peças de roupas sobre os alvos. É possível aumentar ou diminuir as vestimentas através de *pinch* em dispositivo móvel, por isso, recomendado o uso de um telemóvel ou tablet.
 
-Exemplo de marcadores para impressão nos Assets.
+Exemplo de marcadores para impressão nos Assets, ver o projeto através do site Glitch: [https://glitch.com/~roupas-dinamicas](https://glitch.com/~roupas-dinamicas)
