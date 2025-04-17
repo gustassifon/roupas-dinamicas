@@ -4,6 +4,6 @@ Projeto criado para a disciplina de Laboratório de Ambientes Interativos, do Me
 
 Construído com [A-Frame](https://aframe.io), [AR.js](https://ar-js-org.github.io/AR.js-Docs/) e [arjs-gestures](https://github.com/fcor/arjs-gestures).
 
-Cria um vestuário virtual baseado em marcadores adicionando peças de roupas sobre os alvos. É possível aumentar ou diminuir as vestimentas através de pintch em dispositivo móvel, por isso, recomendado o uso de um telemóvel ou tablet.
+Cria um vestuário virtual baseado em marcadores adicionando peças de roupas sobre os alvos. É possível aumentar ou diminuir as vestimentas através de *pinch* em dispositivo móvel, por isso, recomendado o uso de um telemóvel ou tablet.
 
 Exemplo de marcadores para impressão nos Assets.
